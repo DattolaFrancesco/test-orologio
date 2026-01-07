@@ -27,7 +27,7 @@ main {
   align-items: center;
 }
 h2 {
-  font-size: 6em;
+  font-size: 550%;
   color: rgb(104, 103, 103);
 }
 .themeBlackMain {
@@ -50,4 +50,19 @@ h2 {
 }
 .themeH2Black {
   color: rgb(104, 103, 103);
+}
+@media screen and (min-width: 560px) {
+  h2 {
+    font-size: 800%;
+  }
+}
+@media screen and (min-width: 755px) {
+  h2 {
+    font-size: 1000%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 1500%;
+  }
 }
