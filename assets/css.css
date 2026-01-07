@@ -6,23 +6,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightgrey;
-  color: black;
   height: 15vh;
 }
 h1 {
   font-size: 2.8em;
   margin-left: 20px;
 }
-select {
+button {
   font-size: 2em;
   margin-right: 20px;
   text-align: center;
   background-color: transparent;
   border: none;
+  padding-bottom: 8px;
 }
 main {
-  background-color: black;
   height: 85vh;
   display: flex;
   justify-content: center;

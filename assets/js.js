@@ -17,25 +17,16 @@ function times() {
 times();
 
 // listener change theme
-function applyTheme() {
-  main.classList.remove("themeBlackMain", "themeLightMain");
-  header.classList.remove("themeBlackHeader", "themeLightHeader");
-  clock.classList.remove("themeH2White", "themeH2Black");
-  theme.classList.remove("themeH2White", "themeH2Black");
 
-  if (theme.value === "dark") {
-    main.classList.add("themeBlackMain");
-    header.classList.add("themeBlackHeader");
-    clock.classList.add("themeH2Black");
-    theme.classList.add("themeH2White");
-  } else {
-    main.classList.add("themeLightMain");
-    header.classList.add("themeLightHeader");
-    clock.classList.add("themeH2White");
-    theme.classList.add("themeH2Black");
-  }
-}
-
-// Listener per mobile e desktop
-theme.addEventListener("change", () => setTimeout(applyTheme, 0));
-theme.addEventListener("input", applyTheme); // più reattivo su mobile
+theme.addEventListener("click", () => {
+  if (theme.innerText === "☀️") theme.innerText = "🌙";
+  else theme.innerText = "☀️";
+  main.classList.toggle("themeBlackMain");
+  main.classList.toggle("themeLightMain");
+  header.classList.toggle("themeBlackHeader");
+  header.classList.toggle("themeLightHeader");
+  clock.classList.toggle("themeH2White");
+  clock.classList.toggle("themeH2Black");
+  theme.classList.toggle("themeH2White");
+  theme.classList.toggle("themeH2Black");
+});
