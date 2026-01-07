@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+  color: black;
+  height: 15vh;
+}
+h1 {
+  font-size: 2.8em;
+  margin-left: 20px;
+}
+select {
+  font-size: 2em;
+  margin-right: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+main {
+  background-color: black;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 6em;
+  color: rgb(104, 103, 103);
+}
+.themeBlackMain {
+  background-color: black;
+  color: white;
+}
+.themeBlackHeader {
+  background-color: lightgray;
+  color: black;
+}
+.themeLightMain {
+  background-color: white;
+}
+.themeLightHeader {
+  background-color: lightgray;
+  color: white;
+}
+.themeH2White {
+  color: lightgrey;
+}
+.themeH2Black {
+  color: rgb(104, 103, 103);
+}
