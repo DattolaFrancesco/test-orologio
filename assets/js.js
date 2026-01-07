@@ -17,7 +17,7 @@ function times() {
 times();
 
 // listener change theme
-theme.addEventListener("change", () => {
+function applyTheme() {
   main.classList.remove("themeBlackMain", "themeLightMain");
   header.classList.remove("themeBlackHeader", "themeLightHeader");
   clock.classList.remove("themeH2White", "themeH2Black");
@@ -34,4 +34,8 @@ theme.addEventListener("change", () => {
     clock.classList.add("themeH2White");
     theme.classList.add("themeH2Black");
   }
-});
+}
+
+// Listener per mobile e desktop
+theme.addEventListener("change", () => setTimeout(applyTheme, 0));
+theme.addEventListener("input", applyTheme); // più reattivo su mobile
