@@ -17,7 +17,7 @@ function times() {
 times();
 
 // listener change theme
-theme.addEventListener("click", () => {
+theme.addEventListener("input", () => {
   main.classList.remove("themeBlackMain", "themeLightMain");
   header.classList.remove("themeBlackHeader", "themeLightHeader");
   clock.classList.remove("themeH2White", "themeH2Black");
